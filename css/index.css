@@ -1,0 +1,335 @@
+@charset "utf-8";
+
+/* ----------- slide -----------*/
+#main .slideOuter{ 
+    height: 700px;
+    overflow: hidden;
+}
+#main .slideOuter .slide {
+    position:relative;
+    bottom:330px;
+    left: 0;
+}
+.slideOuter .slide > .slide-text{
+    position: absolute;
+    top:40%;
+    left:20%
+}
+.slideOuter .slide > .slide-text h1{
+    font-size:56px;
+    margin:5px 0;
+    font-style: normal;
+    font-weight:700;
+    letter-spacing:1
+}
+.slideOuter .slide > .slide-text h1 span{
+    display: block;
+}
+.slideOuter .slide > .slide-text p{
+    font-size:23px;
+    margin:20px 0 60px;
+}
+.slideOuter .slide > .slide-text a{
+    display: inline-block;
+    font-size:16px;
+    color:#fff;
+    background-color:#000;
+    padding:20px 40px;
+    border-radius: 40px;
+    transition: all 0.3s;
+}
+.slideOuter .slide > .slide-text a:hover{
+    background-color:#232a37;
+    /* transform:translateX(-20px) */
+    /* 질문: a에 호버하면 문자만 왼쪽으로 이동하게 */
+}
+
+/* ----------- introduce -----------*/
+/* --------------- 가운데 십자 구분선 추가하기 --------------- */ 
+.introduce{
+    padding:100px 0;
+}
+.introduce .inner > li{
+    float:left;
+    width:50%;
+    padding:30px 0;
+    overflow: hidden;
+}
+.introduce .inner > li i{
+    font-size:72px;
+}
+.introduce .inner > li .intro-text{
+    float:right;
+    width:80%
+}
+.introduce .inner > li h3{
+    font-size:23px;
+    color:#333;
+    margin-bottom:10px;
+}
+.introduce .inner > li p{
+    font-size:16px;
+    color:#777;
+    margin:5px 0 10px;
+}
+
+/* ----------- sub-slide -----------*/
+#main .sub-slideOuter{
+    height: 900px;
+    border:0px solid red;
+    background-image:linear-gradient(to right, #b5cfd7 0%, #b5cfd7 30%, #f6f6f6 30%, #f6f6f6 100%);
+    overflow: hidden;
+}
+.sub-slideOuter .slide{
+    position: relative;
+    top:150px;
+    left:60px;
+    padding-bottom:141px;
+}
+.sub-slideOuter .slide img{
+    width:550px;
+}
+.sub-slideOuter .slide .slide-text{
+    position:absolute;
+    top:60px;
+    right:15%;
+}
+.sub-slideOuter .slide .slide-text h2{
+    font-size:48px;
+    font-weight: normal;
+    text-align: left;
+    margin:30px 0
+}
+.sub-slideOuter .slide .slide-text h2 span{
+    display: block;
+}
+.sub-slideOuter .slide .slide-text p{
+    text-align: left;
+    font-size:16px;
+    color:#777;
+    margin:10px 0;
+}
+.sub-slideOuter .slide .slide-text a{
+    border:1px solid #000;
+    display: inline-block;
+    padding:20px 50px;
+    margin:30px 0;
+    border-radius: 5px;
+    font-size:16px;
+    color:#1b1d1f;
+    transition:all 0.3s;
+}
+.sub-slideOuter .slide .slide-text a:hover{
+    background-color:#000;
+    color:#fff;
+}
+
+/* ----------- collection -----------*/
+#main .collection{
+    padding:100px 0;
+}
+#main .collection h1{
+    font-size:48px;
+    text-align: center;
+    padding:0 0 60px;
+    font-weight: bold;
+}
+#main .collection .col{
+    float: left;
+}
+#main .collection .col .col-txt span{
+    display: block;
+}
+#main .collection .col .col-txt p{
+    font-size:16px;
+    line-height:1.5;
+    color:#777;
+    padding:15px 0 20px;
+}
+#main .collection .col .col-txt a{
+    color:#263238;
+    font-size:16px;
+    padding:10px 15px 0 0;
+}
+#main .collection .col .col-txt a:hover{
+    color:#32b67a;
+    text-decoration: underline;
+}
+
+#main .collection .col1{
+    width:64%;
+    background:url(../img/banner01.png);
+    background-size: cover;
+    height: 407px;
+    padding:20px;
+    margin-right:2%;
+    position:relative;
+}
+#main .collection .col1 .col-txt{
+    color:#333;
+    position:absolute;
+    top:50%;
+    right:15%;
+    transform:translateY(-50%)
+}
+#main .collection .col1 .col-txt h2{
+    font-size:40px;
+    font-weight:500;
+}
+#main .collection .col2{
+    width:34%;
+    background:url(../img/banner02.png);
+    background-size: cover;
+    height: 407px;
+    padding:20px;
+    position: relative;
+}
+#main .collection .col2 .col-txt{
+    color:#333;
+    position:absolute;
+    bottom:10px;
+    left:20px;
+    padding:16px;
+}
+#main .collection .col2 .col-txt h2,
+#main .collection .col3 .col-txt h2,
+#main .collection .col4 .col-txt h2{
+    font-size:36px;
+    font-weight:500;
+}
+#main .collection .col2 .col-txt a{
+    margin:10px 0;
+    display: inline-block;
+}
+
+#main .collection .col3{
+    width:29%;
+    background:url(../img/banner03.png);
+    background-size: cover;
+    height: 407px;
+    margin-top:30px;
+    margin-right:2%;
+    position:relative;
+}
+#main .collection .col3 .col-txt,
+#main .collection .col4 .col-txt{
+    color:#333;
+    position:absolute;
+    bottom:10px;
+    left:20px;
+    padding:16px;
+}
+#main .collection .col3 .col-txt a,
+#main .collection .col4 .col-txt a{
+    padding:30px 0;
+    display: inline-block;
+}
+#main .collection .col4{
+    width:69%;
+    background:url(../img/banner04.png);
+    background-size: cover;
+    height: 407px;
+    margin-top:30px;
+    position:relative;
+}
+
+/* ----------- service -----------*/
+#main .service{
+    padding:120px 0;
+    background-color:#f6f6f6;
+    overflow: hidden;
+}
+#main .service h1,
+#main .clients h1{
+    font-size:48px;
+    font-weight: bold;
+    text-align: center;
+    margin:0 0 40px;
+}
+#main .service .content{
+    float: left;
+    margin:0 15px;
+}
+#main .service .content-text{
+    color:#333;
+    font-size:16px;
+    background-color:#fff;
+    padding:24px;
+    width:600px;
+}
+#main .service .content > .content-text h3{
+    font-size:28px;
+    font-weight: normal;
+}
+#main .service .content > .content-text p{
+    font-size:16px;
+    color:#777;
+    padding:20px 0;
+    display: block;
+}
+
+#main .service .content:nth-child(4),
+#main .service .content:nth-child(5),
+#main .service .content:nth-child(6){
+    display: none;
+}
+
+/* ----------- clients -----------*/
+#main .clients{
+    padding:120px 0;
+}
+#main .clients .imgbox{
+    float: left;
+    text-align: center;
+    padding:0 15px;
+    border:1px solid #eee;
+    width:25%;
+    height: 130px;
+    position: relative;
+}
+#main .clients .imgbox img{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%, -50%)
+}
+
+/* ----------- attachment -----------*/
+#main .attachment {
+    background:url(../img/banner-bg.png);
+    background-attachment: fixed;   
+    padding:120px 0;
+    text-align: center;
+}
+#main .attachment h2{
+    font-size:56px;
+    padding-bottom:25px;
+}
+#main .attachment p{
+    font-size:23px;
+    padding:15px;
+}
+#main .attachment p span{
+    display: block;
+}
+#main .attachment .att-btn{
+    font-size:16px;
+    display: inline-block;
+    margin:15px 20px;
+    padding:15px 35px;
+    border:1px solid #000;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+#main .attachment .btn1{
+    background-color:#000;
+    color:#fff;
+}
+#main .attachment .btn1:hover{
+    background-color:#232a37;
+}
+#main .attachment .btn2:hover{
+    background-color:#000;
+    color:#fff;
+}
